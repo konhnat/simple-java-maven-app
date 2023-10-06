@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tool {
+        mvn '3.9.5'
+    }
     stages {
         stage('Build') {
             steps {
